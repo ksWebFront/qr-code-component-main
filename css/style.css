@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css?family=Outfit:regular,700&display=swap");
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+li {
+	list-style: none;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+img {
+	vertical-align: top;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+html {
+	font-size: 15px;
+}
+
+body {
+	line-height: 1;
+	overflow-x: hidden;
+	font-family: "Outfit", sans-serif;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.main {
+	flex-grow: 1;
+}
+
+[class*="__container"] {
+	max-width: 1440px;
+	margin: 0px auto;
+	padding: 0px 15px;
+}
+
+:root {
+	--blue: #2c7dfa;
+	--blue-shade: #3685ff;
+	--dark-navy: #1f314f;
+	--grey: #7d889e;
+	--light-grey: #d5e1ef;
+	--white: #fff;
+}
+
+.page {
+	background: var(--light-grey);
+}
+
+.page__container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 152px;
+	padding-bottom: 151px;
+}
+
+@media (max-width: 767.98px) {
+	.page__container {
+		padding-top: 85px;
+		padding-bottom: 85px;
+	}
+}
+
+.item {
+	padding: 16px 16px 40px 16px;
+	text-align: center;
+	box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.05);
+	background: var(--white);
+	border-radius: 20px;
+	width: 320px;
+	height: 497px;
+}
+
+.item__image {
+	background: url('../images/oval.png') 0 0 no-repeat;
+	max-width: 288px;
+	max-height: 288px;
+	padding: 64px;
+	border-radius: 10px;
+}
+
+.item__image img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.item__text {
+	padding-top: 24px;
+}
+
+.item__title {
+	font-family: var(--font-family);
+	font-weight: 700;
+	font-size: 22px;
+	text-align: center;
+	color: var(--dark-navy);
+	padding-bottom: 16px;
+}
+
+.item__desc {
+	margin: 0 auto;
+	max-width: 256px;
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 15px;
+	letter-spacing: 0.01em;
+	text-align: center;
+	color: var(--grey);
+}
